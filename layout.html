@@ -90,6 +90,8 @@
                 {%- endblock %}
                 {%- block topnav_li_extra_items %}{%- endblock %}
             </ul>
+            {%- block topnav_custom_items %}
+            {%- endblock %}
             <ul class="side-nav" id="nav-mobile-sidebar">
                 {{ self.topnav_li_items() }}
             </ul>
