@@ -48,6 +48,10 @@ p {
   margin: 0.8em 0 0.5em 0;
 }
 
+p.caption {
+  margin-top: 0 !important;
+}
+
 pre {
   overflow: auto;
   overflow-y: hidden;
@@ -89,6 +93,17 @@ div.code-block-caption:hover > a.headerlink {
   margin-top: 0 !important;
 }
 
+.section {
+
+  img {
+    max-width: 100%;
+  }
+
+  img.img-full {
+    max-width: 2147483647px !important;
+  }
+}
+
 img.align-left, .figure.align-left, object.align-left {
   clear: left;
   float: left;
@@ -122,6 +137,7 @@ a.headerlink {
 
 .rel-nav {
   float: right;
+  padding-right: 1em;
   .btn {
     padding: 0 1rem;
     background-color: $doc-nav-buttons-color;
@@ -219,9 +235,13 @@ a.headerlink {
       padding: 4px
     }
 
+    img.align-left {
+      margin-top: 0;
+    }
+
     img {
-      margin-top: 1em;
-      margin-bottom: 1em;
+      /*margin-top: 1em;*/
+      margin-bottom: 0;
     }
   }
 
@@ -352,10 +372,16 @@ div.footer-copyright {
 .side-nav {
   a {
     &:hover {
-      color: #ffffff;
+      /*color: #ffffff;*/
     }
   }
 }
+
+
+div.warning a {
+  color: #80d8ff !important;
+}
+
 
 /*----------------- Media mods -----------------------*/
 
@@ -396,7 +422,7 @@ div.footer-copyright {
   }
 
   #bottom-rel-placeholder > .rel-nav {
-    margin: -60px 25px 0 0;
+    margin: -55px 25px 0 0;
   }
 }
 
