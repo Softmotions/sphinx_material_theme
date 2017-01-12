@@ -2,7 +2,7 @@
 
 This theme based on http://materializecss.com CSS framework
 
-Theme showcases: http://ncms.one http://ejdb.  
+Theme showcases: http://ncms.one http://ejdb.org  
 
 **NOTE:** Developed for Sphinx v1.5.x 
 
